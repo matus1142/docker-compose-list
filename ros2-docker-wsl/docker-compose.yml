@@ -1,0 +1,14 @@
+services:
+  ros2:
+    image: osrf/ros:foxy-desktop  # Replace with your desired ROS2 image
+    container_name: ros2_container
+    network_mode: host  # Use host networking
+    command:
+      - /bin/bash
+    volumes:
+      - ./ros2_ws:/root/ros2_ws  # Mount your ROS2 workspace
+    stdin_open: true
+    tty: true
+
+# execute docker : docker exec -it <container name> /bin/bash
+# setup ros2 : source /opt/ros/foxy/setup.bash
