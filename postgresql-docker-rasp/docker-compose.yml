@@ -16,8 +16,3 @@ services:
         limits:
           memory: 200M
           cpus: "0.5"
-
-# sudo docker run -p 8888:80 \
-#     -e 'PGADMIN_DEFAULT_EMAIL=user@example.com' \
-#     -e 'PGADMIN_DEFAULT_PASSWORD=5468' \
-#     -d dpage/pgadmin4
