@@ -1,0 +1,9 @@
+services:
+  nextcloud:
+    image: nextcloud
+    container_name: nextcloud
+    ports:
+      - "8000:80"
+    volumes:
+      - ./nextcloud_data:/var/www/html
+    restart: always
