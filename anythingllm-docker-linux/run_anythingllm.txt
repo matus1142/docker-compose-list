@@ -1,0 +1,6 @@
+docker run -d -p 3001:3001 --cap-add SYS_ADMIN -v ./anythingllm_storage:/app/server/storage -v ./.env:/app/server/.env -e STORAGE_DIR="/app/server/storage" --name anythingllm --restart always mintplexlabs/anythingllm
+
+
+# need to change permission for access folder anythingllm_storage & .env
+# chmod 777 ./anythingllm_storage
+# chmod 666 ./.env
