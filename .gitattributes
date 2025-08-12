@@ -1,0 +1,14 @@
+# Auto-detect text files and normalize line endings to LF
+*.txt text=auto
+
+# Force specific files to use LF line endings
+*.sh text eol=lf
+
+# Force specific files to use CRLF line endings
+*.bat text eol=crlf
+
+# Treat certain files as binary to prevent line ending normalization
+*.png binary
+
+
+*.yml text eol=lf
